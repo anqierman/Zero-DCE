@@ -93,17 +93,17 @@ if __name__ == "__main__":
 
 	# Input Parameters
 	# parser.add_argument('--lowlight_images_path', type=str, default="data/train_data/")
-	parser.add_argument('--lowlight_images_path', type=str, default="/home/cmy/dataset/train_data/")
+	parser.add_argument('--lowlight_images_path', type=str, default="/home/cmy/dataset/train_data_car/")
 	parser.add_argument('--lr', type=float, default=0.0001)
 	parser.add_argument('--weight_decay', type=float, default=0.0001)
 	parser.add_argument('--grad_clip_norm', type=float, default=0.1)
-	parser.add_argument('--num_epochs', type=int, default=200)
+	parser.add_argument('--num_epochs', type=int, default=100)
 	parser.add_argument('--train_batch_size', type=int, default=8)
 	parser.add_argument('--val_batch_size', type=int, default=4)
 	parser.add_argument('--num_workers', type=int, default=4)
 	parser.add_argument('--display_iter', type=int, default=10)
 	parser.add_argument('--snapshot_iter', type=int, default=10)
-	parser.add_argument('--snapshots_folder', type=str, default="snapshots/")
+	parser.add_argument('--snapshots_folder', type=str, default="snapshots_car/")
 	parser.add_argument('--load_pretrain', type=bool, default= False)
 	parser.add_argument('--pretrain_dir', type=str, default= "snapshots/Epoch99.pth")
 
